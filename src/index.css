@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-ace-cream: #f9ffd7;
+  --color-ace-black: #000000;
+  --font-display: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+  --font-body: "Raleway", sans-serif;
+}
+
+body {
+  background-color: var(--color-ace-black);
+  color: var(--color-ace-cream);
+  font-family: var(--font-body);
+}
