@@ -11,6 +11,8 @@ import CreativeProfile from './pages/CreativeProfile'
 import CastingCalls from './pages/CastingCalls'
 import PostCall from './pages/PostCall'
 import CastingDetail from './pages/CastingDetail'
+import SubmitContent from './pages/SubmitContent'
+import Admin from './pages/Admin'
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/members/casting" element={<CastingCalls />} />
         <Route path="/members/casting/new" element={<PostCall />} />
         <Route path="/members/casting/:id" element={<CastingDetail />} />
+        <Route path="/members/submit" element={<SubmitContent />} />
+        <Route path="/members/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )
