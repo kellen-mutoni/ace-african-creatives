@@ -8,6 +8,9 @@ import Members from './pages/Members'
 import MyProfile from './pages/MyProfile'
 import Creatives from './pages/Creatives'
 import CreativeProfile from './pages/CreativeProfile'
+import CastingCalls from './pages/CastingCalls'
+import PostCall from './pages/PostCall'
+import CastingDetail from './pages/CastingDetail'
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path="/members/profile" element={<MyProfile />} />
         <Route path="/members/creatives" element={<Creatives />} />
         <Route path="/members/creatives/:id" element={<CreativeProfile />} />
+        <Route path="/members/casting" element={<CastingCalls />} />
+        <Route path="/members/casting/new" element={<PostCall />} />
+        <Route path="/members/casting/:id" element={<CastingDetail />} />
       </Routes>
     </BrowserRouter>
   )

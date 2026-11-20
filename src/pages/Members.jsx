@@ -32,6 +32,7 @@ function Members() {
       <p className="mb-6">This is the Networking side of ACE. Only approved creatives can see it.</p>
       <Link to="/members/profile" className="underline mr-6">My profile</Link>
 <Link to="/members/creatives" className="underline mr-6">Find creatives</Link>
+<Link to="/members/casting" className="underline mr-6">Casting calls</Link>
 <Link to="/" className="underline mr-6">Discovery</Link>
       <button onClick={logout} className="underline">Log out</button>
     </div>
