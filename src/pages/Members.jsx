@@ -33,6 +33,8 @@ function Members() {
       <Link to="/members/profile" className="underline mr-6">My profile</Link>
 <Link to="/members/creatives" className="underline mr-6">Find creatives</Link>
 <Link to="/members/casting" className="underline mr-6">Casting calls</Link>
+<Link to="/members/submit" className="underline mr-6">Submit content</Link>
+{profile.is_admin && <Link to="/members/admin" className="underline mr-6">Admin</Link>}
 <Link to="/" className="underline mr-6">Discovery</Link>
       <button onClick={logout} className="underline">Log out</button>
     </div>
