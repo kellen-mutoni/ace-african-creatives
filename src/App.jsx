@@ -5,6 +5,9 @@ import Register from './pages/Register'
 import Pending from './pages/Pending'
 import Login from './pages/Login'
 import Members from './pages/Members'
+import MyProfile from './pages/MyProfile'
+import Creatives from './pages/Creatives'
+import CreativeProfile from './pages/CreativeProfile'
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route path="/pending" element={<Pending />} />
         <Route path="/login" element={<Login />} />
         <Route path="/members" element={<Members />} />
+        <Route path="/members/profile" element={<MyProfile />} />
+        <Route path="/members/creatives" element={<Creatives />} />
+        <Route path="/members/creatives/:id" element={<CreativeProfile />} />
       </Routes>
     </BrowserRouter>
   )
