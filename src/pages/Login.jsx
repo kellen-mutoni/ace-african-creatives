@@ -11,7 +11,10 @@ function Login() {
   async function handleSubmit(e) {
     e.preventDefault()
     const { data, error } = await supabase.auth.signInWithPassword({ email, password })
-    if (error) return setError(error.message)
+    if (error) {
+  if (error.message.includes('not confirmed')) return navigate('/pending')
+  return setError(error.message)
+}
 
     // only approved accounts can enter the Networking side
     const { data: profile } = await supabase
